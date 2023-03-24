@@ -22,11 +22,12 @@ namespace Syntax_Sugar_Exercise_01_Answers
             //    string answer = "Y is greater than X.";
             //}
 
+            
 
             // TODO: Refactor here
-
+            var answer = x > y ? "X is greater than Y." : "Y is greater than X.";
             // TODO: Print out the answer to the console
-
+            Console.WriteLine(answer);
 
             AddSpaces();
 
@@ -46,9 +47,9 @@ namespace Syntax_Sugar_Exercise_01_Answers
 
 
             // TODO: Refactor here
-
+            var answer1 = first % 2 == 0 ? "It is even." : "It is odd.";
             // TODO: Print out the answer to the console
-
+            Console.Write(answer1);
 
             AddSpaces();
 
@@ -68,9 +69,9 @@ namespace Syntax_Sugar_Exercise_01_Answers
             //}
 
             // TODO: Refactor here
-
+            var answer2 = first % 2 != 0 ? "It is even." : "It is odd.";
             // TODO: Print out the answer to the console
-
+            Console.WriteLine(answer2);
 
             AddSpaces();
 
@@ -96,10 +97,11 @@ namespace Syntax_Sugar_Exercise_01_Answers
 
 
             // TODO: Refactor here
-
+            var greeting = firstName.ToLower() == "john" && lastName.ToLower() == "doe" && password == "password123" ?
+                $"Welcome, Admin: {firstName} {lastName}." : $"Welcome, {firstName} {lastName}.";
 
             // TODO: Print out the greeting to the console
-
+            Console.Write(greeting);
 
         }
 
